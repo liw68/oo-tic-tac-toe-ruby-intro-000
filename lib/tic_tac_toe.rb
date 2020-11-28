@@ -48,9 +48,9 @@ WIN_COMBINATIONS = [
   end
 
 
-  def turn_count(board)
+  def turn_count
     turns = 0
-    board.each do |spot|
+    @board.each do |spot|
       if spot == "X" || spot == "O"
       turns += 1
       end
