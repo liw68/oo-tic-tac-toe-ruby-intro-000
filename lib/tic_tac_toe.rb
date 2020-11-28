@@ -71,10 +71,10 @@ WIN_COMBINATIONS = [
     input = gets.strip
     index = input_to_index(input)
     if valid_move?(index) == true
-      move(index, current_player(board))
+      move(index, current_player
       display_board
     else
-      turn(board)
+      turn
     end
   end
 
