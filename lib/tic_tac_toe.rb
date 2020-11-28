@@ -109,8 +109,8 @@ WIN_COMBINATIONS = [
     end
   end
 
-  def over?(board)
-    if won?(board) || draw?(board)
+  def over?
+    if won? || draw?
       return true
     else
       return false
