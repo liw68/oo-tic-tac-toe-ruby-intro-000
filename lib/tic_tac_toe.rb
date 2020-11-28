@@ -130,13 +130,13 @@ WIN_COMBINATIONS = [
     end
   end
 
-  def play(board)
-    until over?(board)
-      turn(board)
+  def play
+    until over?
+      turn
     end
-    if won?(board)
-      puts "Congratulations #{winner(board)}!"
-    else draw?(board)
+    if won?
+      puts "Congratulations #{winner}!"
+    else draw?
       puts "Cat's Game!"
     end
   end
