@@ -78,7 +78,7 @@ WIN_COMBINATIONS = [
     end
   end
 
-  def won?(board)
+  def won?
     WIN_COMBINATIONS.each do |combo|
      index_1 = combo[0]
      index_2 = combo[1]
