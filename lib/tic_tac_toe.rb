@@ -117,13 +117,13 @@ WIN_COMBINATIONS = [
     end
   end
 
-  def winner(board)
+  def winner
     index = []
-    index = won?(board)
+    index = won?
     if index == false
       return nil
     elsif
-      board[index[0]] == "X"
+      @board[index[0]] == "X"
         return "X"
     else
       return "O"
