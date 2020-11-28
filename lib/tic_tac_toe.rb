@@ -101,8 +101,8 @@ WIN_COMBINATIONS = [
     end
   end
 
-  def draw?(board)
-    if full?(board) && !won?(board)
+  def draw?
+    if full? && !won?
       return true
     else
       return false
